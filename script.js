@@ -52,7 +52,8 @@ document.addEventListener('DOMContentLoaded', () => {
       form.reset();
       say('Thank you! Your message was sent. I will reply as soon as I can.', true);
     } catch (err) {
-      say('Sorry, the message could not be sent. Please message me on WhatsApp instead.', false);
+      say('The form could not deliver your message, so I am opening WhatsApp with it filled in. Just press send there.', false);
+      window.open('https://wa.me/233545854976?text=' + encodeURIComponent(text), '_blank');
     }
     btn.disabled = false; btn.textContent = 'Send message';
   });
