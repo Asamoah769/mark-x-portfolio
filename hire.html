@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire me | Mark-X</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="brand" href="index.html"
+          ><span class="dot">.</span>Mark-<span class="x-mark">X</span></a
+        >
+
+        <ul class="ul">
+          <li><a class="links" href="index.html">Home</a></li>
+          <li><a class="links" href="about.html">About</a></li>
+          <li><a class="links" href="services.html">Services</a></li>
+          <li><a class="links" href="designs.html">Designs</a></li>
+          <li><a class="links" href="projects.html">Projects</a></li>
+          <li><a class="links" href="blog.html">Blog</a></li>
+          <li><a class="nav-cta" href="hire.html">Hire me</a></li>
+        </ul>
+
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="contact-hero">
+        <div class="contact-container">
+          <div class="contact-info">
+            <span class="subheading">Hire me</span>
+            <h1>Let's start your next <span>project.</span></h1>
+            <p>Tell me what you need, whether it is a logo, a website, a software system or tech support. I will reply with a plan and a price.</p>
+
+            <div class="info-items">
+              <div class="item">
+                <h4>Phone and WhatsApp</h4>
+                <p>+233 54 585 4976</p>
+                <br />
+                <h4>Email</h4>
+                <a href="mailto:asamoahbismark39@gmail.com">asamoahbismark39@gmail.com</a>
+              </div>
+              <div class="item">
+                <h4>Based in</h4>
+                <p>Kasoa, Kakraba - Near KFC</p>
+                <br />
+                <a class="hire-wa" href="https://wa.me/233545854976">Chat on WhatsApp</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="hire-form" data-endpoint="https://formspree.io/f/xbgdkbbq">
+              <input type="hidden" name="_subject" value="New message from your Mark-X website" />
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true" />
+              <div class="form-group">
+                <label for="f-name">Name</label>
+                <input id="f-name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" placeholder="email@address.com" required />
+              </div>
+              <div class="form-group">
+                <label for="f-phone">Phone or WhatsApp (optional)</label>
+                <input id="f-phone" name="phone" type="tel" placeholder="e.g. 054 000 0000" />
+              </div>
+              <div class="form-group">
+                <label for="f-service">What do you need?</label>
+                <select id="f-service" name="service">
+                  <option>Custom software</option>
+                  <option>Graphic design</option>
+                  <option>Website</option>
+                  <option>Tech support</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="f-msg">Message</label>
+                <textarea id="f-msg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">Send message</button>
+              <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="small-footer">
+      <div class="footer-main">
+        <a class="brand" href="#"><span>.</span>Mark-<span>X</span></a>
+
+        <div class="footer-contact">
+          <a href="mailto:asamoahbismark39@gmail.com" class="footer-email"
+            >asamoahbismark39@gmail.com</a
+          >
+          <div class="footer-socials">
+            <a href="https://wa.me/233545854976">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 .Mark-X. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
