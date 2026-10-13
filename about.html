@@ -13,6 +13,17 @@
     <meta property="og:url" content="https://markx.tech/about.html" />
 
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Photos of Bismark: side by side */
+      .photo-section { background: #0f0f0f; padding: 0 5% 80px; }
+      .photo-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+      .photo-row figure { margin: 0; }
+      .photo-row img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 16px; border: 1px solid rgba(0, 212, 255, 0.2); }
+      .photo-row figcaption { margin-top: 10px; text-align: center; font-size: 0.95rem; color: rgba(255, 255, 255, 0.7); }
+      @media (max-width: 700px) { .photo-row { grid-template-columns: minmax(0, 1fr); } }
+      .about-visual .visual-box { overflow: hidden; }
+      .about-visual .visual-box img { width: 100%; height: 100%; object-fit: cover; object-position: center 20%; }
+    </style>
   </head>
   <body>
     <header>
